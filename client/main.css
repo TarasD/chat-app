@@ -1,0 +1,227 @@
+/*********************** GENERAL ************************/
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+body * {
+    outline: none;
+}
+#react-root,
+.container {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+/*********************** APP ************************/
+header {
+    height: 60px;
+    background: lightyellow;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+header h1 {
+    margin: 0;
+}
+.app-content {
+    height: calc(100% - 60px);
+    overflow: hidden;
+    background: lightcyan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-title {
+    text-decoration: none;
+    color: black;
+}
+
+/*********************** LOGIN/REGISTER ************************/
+.user-accounts {
+    width: 90%;
+    max-width: 400px;
+}
+.form-input,
+.form-label {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.form-label {
+    margin-bottom: 5px;
+}
+.form-input {
+    height: 35px;
+    margin-bottom: 10px;
+}
+.form-error {
+    min-height: 20px;
+    color: red;
+}
+
+.user-block {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    z-index: 10;
+    width: 200px;
+    font-size: 18px;
+}
+.logged-user {
+    text-align: right;
+    padding: 0 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    float: right;
+}
+.user-dropdown {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    max-height: 100px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    box-shadow: 0 0 20px #999;
+}
+.user-dropdown.hide {
+    max-height: 0;
+}
+.user-dropdown-el {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.user-dropdown-el a {
+    text-decoration: none;
+    color: black;
+}
+
+/*********************** CONTENT ************************/
+.content-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.messages-wrapper {
+    height: calc(100% - 80px);
+    background: white;
+    overflow: auto;
+    font-size: 18px;
+}
+.input-wrapper {
+    height: 80px;
+    background: pink;
+    display: flex;
+    align-items: center;
+}
+.message-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.single-message {
+    padding: 5px 15px;
+}
+.message-author {
+    margin: 0 10px 0 0;
+    font-weight: bold;
+}
+.message-date {
+    font-size: 14px;
+    color: #999;
+}
+.message-text {
+    margin: 0;
+}
+.line {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    height: 8px;
+    margin: 0 -15px 8px;
+}
+.line-text {
+    position: absolute;
+    background: white;
+    padding: 0 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*********************** ACCOUNT ************************/
+.account-wrapper {
+    height: 100%;
+    width: 100%;
+    background: lightblue;
+    display: flex;
+}
+.account-sidebar {
+    height: 100%;
+    width: 30%;
+    background: lightcyan;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-element {
+    text-align: center;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.sidebar-element.active {
+    background: cyan;
+}
+.sidebar-element a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.account-content {
+    width: 70%;
+    background: lightgray;
+}
+.account-tab {
+    height: 100%;
+    overflow: auto;
+    display: none;
+    padding: 15px;
+}
+.account-tab.active {
+    display: block;
+}
+.profile-label {
+    display: block
+}
+.profile-input {
+    display: block;
+    font-size: 18px;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 0 10px;
+}
+.submit-profile {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
